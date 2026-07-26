@@ -1,6 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sink",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "url.016668.xyz",
+      "custom_domain": true
+    }
+  ],
   "main": ".output/server/index.mjs",
   "assets": {
     "binding": "ASSETS",
